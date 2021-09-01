@@ -6,6 +6,7 @@ public class Student {
     int roll_no;
     String name;
     int marks[] = new int[5];
+    public int total_marks=0;
 
     public Student(int rln, String s) {
         roll_no = rln;
@@ -14,6 +15,7 @@ public class Student {
         System.out.println("Enter marks of 5 subjects:");
         for (int i = 0; i < marks.length; i++) {
             marks[i] = sc.nextInt();
+            total_marks+=marks[i];
         }
     }
 
